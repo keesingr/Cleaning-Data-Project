@@ -1,0 +1,100 @@
+---
+title: "Accelerometer Data Codebook"
+output: html_document
+---
+
+<h1>Source: </h1>
+This file is derived from the UCI human accelerometer data set available at 
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
+
+From the original documentation within the zipped file README.TXT:
+
+"The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details."
+
+<h1>Process:</h1>
+This is a pretty version of the human accelerometer data that contains only the data for mean and std fields for each measurement. The names are changed from the original data set to remove special characters. Activity fields have been changed to strings. Test and training data have been combined.
+
+<h1>Data Descriptors:</h1>
+<ul>
+
+<li> Accelerometer records (All floating point)
+<ul>
+<li>tBodyAccmeanX : Mean Total Body Acceleration in X Dimension 
+<li>tBodyAccmeanY : Mean Total Body Acceleration in Y Dimension
+<li>tBodyAccmeanZ : Mean Total Body Acceleration in Z Dimension
+<li>tBodyAccstdY: Standard Deviation of Total Body Acceleration in Y Dimension
+<li>tBodyAccstdZ: Standard Deviation of Total Body Acceleration in Z Dimension
+<li>tGravityAccmeanX: Mean Total Graviational Acceleration in X Dimension
+<li>tGravityAccmeany: Mean Total Graviational Acceleration in Y Dimension
+<li>tGravityAccmeanz: Mean Total Graviational Acceleration in Z Dimension
+<li>tGravityAccstdX: Standard Deviation of Total Graviational Acceleration in X Dimension
+<li>tGravityAccstdY: Standard Deviation of Total Graviational Acceleration in Y Dimension
+<li>tGravityAccstdZ: Standard Deviation of Total Graviational Acceleration in Z Dimension
+<li>tBodyAccJerkmeanX: Mean Body Jerk Acceleration in X Dimension
+<li>tBodyAccJerkmeany: Mean Body Jerk Acceleration in Y Dimension
+<li>tBodyAccJerkmeanz: Mean Body Jerk Acceleration in Z Dimension
+<li>tBodyAccJerkstdX: Standard Deviation of Body Jerk Acceleration in X Dimension
+<li>tBodyAccJerkstdy: Standard Deviation of Body Jerk Acceleration in Y Dimension
+<li>tBodyAccJerkstdz: Standard Deviation of Body Jerk Acceleration in Z Dimension
+<li>tBodyGyromeanX: Mean Body Gyroscope in X Dimension
+<li>tBodyGyromeany: Mean Body Gyroscope in Y Dimension
+<li>tBodyGyromeanz: Mean Body Gyroscope in Z Dimension
+<li>tBodyGyrostdX: Standard Deviation of Body Gyroscope in X Dimension
+<li>tBodyGyrostdy: Standard Deviation of Body Gyroscope in Y Dimension
+<li>tBodyGyrostdz: Standard Deviation of Body Gyroscope in Z Dimension
+<li>tBodyGyroJerkmeanX: Mean Body Gyroscope Jerk in X Dimension
+<li>tBodyGyroJerkmeany: Mean Body Gyroscope Jerk in Y Dimension
+<li>tBodyGyroJerkmeanz: Mean Body Gyroscope Jerk in Z Dimension
+<li>tBodyGyroJerkstdX: Standard Deviation of  Body Gyroscope Jerk in X Dimension
+<li>tBodyGyroJerkstdy: Standard Deviation of  Body Gyroscope Jerk in Y Dimension
+<li>tBodyGyroJerkstdz: Standard Deviation of  Body Gyroscope Jerk in Z Dimension
+<li>tBodyAccMagmean: Mean Body Acceleration Magnitude
+<li>tBodyAccMagstd: Standard Deviation of Body Acceleration Magnitude
+<li>tGravityyAccMagmean: Mean Gravity Acceleration Magnitude
+<li>tGravityAccMagstd: Standard Deviation of Gravity Acceleration Magnitude
+<li>tBodyAccJerkMagmean:  Mean Body Acceleration Jerk Magnitude
+<li>tBodyAccJerkMagstd:  Standard Deviation of Body Acceleration Jerk Magnitude
+<li>tBodyGyroMagmean: Mean Body Gyro Magnitude
+<li>tBodyGyroMagstd : Standard Deviation of Body Gyro Magnitude
+<li>tBodyGyroJerkMagmean: Mean Body Gyro Jerk Magnitude
+<li>tBodyGyroJerkMagstd : Standard Deviation of Body Gyro Jerk Magnitude
+<li>fBodyAccmeanX : Mean Total Body Acceleration in X Dimension in Frequency Domain
+<li>fBodyAccmeanY : Mean Total Body Acceleration in Y Dimension in Frequency Domain
+<li>fBodyAccmeanZ : Mean Total Body Acceleration in Z Dimension in Frequency Domain
+<li>fBodyAccstdX : Standard Deviation of Total Body Acceleration in X Dimension in Frequency Domain
+<li>fBodyAccstdY: Standard Deviation of Total Body Acceleration in Y Dimension in Frequency Domain
+<li>fBodyAccstdZ: Standard Deviation of Total Body Acceleration in Z Dimension in Frequency Domain
+<li>fBodyAccJerkmeanX: Mean Body Jerk Acceleration in X Dimension in Frequency Domain
+<li>fBodyAccJerkmeany: Mean Body Jerk Acceleration in Y Dimension in Frequency Domain
+<li>fBodyAccJerkmeanz: Mean Body Jerk Acceleration in Z Dimension in Frequency Domain
+<li>fBodyAccJerkstdX: Standard Deviation of Body Jerk Acceleration in X Dimension in Frequency Domain
+<li>fBodyAccJerkstdy: Standard Deviation of Body Jerk Acceleration in Y Dimension in Frequency Domain
+<li>fBodyAccJerkstdz: Standard Deviation of Body Jerk Acceleration in Z Dimension in Frequency Domain
+<li>fBodyGyromeanX: Mean Body Gyroscope in X Dimension in Frequency Domain
+<li>fBodyGyromeany: Mean Body Gyroscope in Y Dimension in Frequency Domain
+<li>fBodyGyromeanz: Mean Body Gyroscope in Z Dimension in Frequency Domain
+<li>fBodyGyrostdX: Standard Deviation of Body Gyroscope in X Dimension in Frequency Domain
+<li>fBodyGyrostdy: Standard Deviation of Body Gyroscope in Y Dimension in Frequency Domain
+<li>fBodyGyrostdz: Standard Deviation of Body Gyroscope in Z Dimension in Frequency Domain
+<li>fBodyAccMagmean: Mean Body Acceleration Magnitude in Frequency Domain
+<li>fBodyAccMagstd: Standard Deviation of Body Acceleration Magnitude in Frequency Domain
+<li>fBodyBodyAccJerkMagmean: Mean Body Gyro Acceleration Jerk Magnitude in Frequency Domain
+<li>fBodyBodyAccJerkMagstd: Standard Deviation of Body Gyro Acceleration Jerk Magnitude in Frequency Domain
+<li>fBodyBodyGyroMagmean:  Mean Body Gyro Magnitude in Frequency Domain
+<li>ffBodyBodyGyroMagstd:  Standard Deviation of Body Gyro Magnitude in Frequency Domain
+<li>fBodyBodyGyroJerkMagmean: Mean Body Gyro Jerk Magnitude in Frequency Domain
+<li>fBodyBodyGyroJerkMagstd: Standard Deviation of Body Gyro Jerk Magnitude in Frequency Domain
+</ul>
+<li> Subject: Experimental subject number (Integer)
+<li> Activity: Activity measured (String)
+<ul>
+<li>Walking
+<li>Walking_Upstairs
+<li>Walking_Downstairs
+<li>Sitting
+<li>Standing
+<li>Laying
+</ul>
+</ul>
