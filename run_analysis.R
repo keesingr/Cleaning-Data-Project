@@ -93,6 +93,6 @@ createPrettyActivityFile <- function(){
   accelerometerData <- getPrettyActivityData()
   activityMeans <- ddply(accelerometerData, "Activity", colwise(mean))
   subjectMeans <- ddply(accelerometerData, "Subject", colwise(mean))
-  write.table(subjectMeans, "Accelerometer_Data.txt")
-  write.table(activityMeans, "Accelerometer_Data.txt", append = TRUE)
+  write.table(subjectMeans, "Accelerometer_Data.txt", row.names = FALSE)
+  write.table(activityMeans, "Accelerometer_Data.txt", row.names = FALSE, append = TRUE)
 }
